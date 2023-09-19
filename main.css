@@ -17,9 +17,15 @@ html {
 }
 
 .navbar {
+    
+}
+
+nav {
+  }
+
+ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
 }
 
 body {
