@@ -24,11 +24,13 @@ body {
 /* Navigation Bar */
 
 .navbar {
-  position: sticky;
   display: flex;
   padding: 1rem 2rem;
   justify-content: space-between; 
+  align-items: center;
   color: var(--Medium-Gray);
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .logo {
@@ -40,12 +42,15 @@ ul {
   display: flex;
 }
 
+li:hover {
+  color: var(--Almost-Black);
+}
+
 .list li {
   margin-left: 3rem;
 }
 
 .log-reg li {
-  font-size: 1.2rem;
   margin-left: 1rem;
   color: var(--Medium-Gray);
   padding: 1rem 1.5rem;
