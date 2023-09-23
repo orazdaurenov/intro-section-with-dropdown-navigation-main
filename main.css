@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;500;700&display=swap");
 
 :root {
   --Almost-White: hsl(0, 0%, 98%);
@@ -18,7 +18,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
 }
 
 /* Navigation Bar */
@@ -26,12 +26,12 @@ body {
 .navbar {
   display: flex;
   padding: 1rem 2rem;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   color: var(--Medium-Gray);
   font-size: 1.2rem;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 }
 
 .logo {
@@ -45,14 +45,15 @@ ul li {
 }
 
 .dropdown {
-  width: 100%;
+  /* width: 100%; */
   position: absolute;
   z-index: 2;
   display: none;
 }
 
-.dropdown:hover {
+.navbar ul li:hover ul {
   display: block;
+  border: 2px solid orange;
 }
 
 li:hover {
@@ -88,7 +89,7 @@ li:hover {
 article:first-child {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 }
 
 article:last-child img {
@@ -135,11 +136,11 @@ button:hover {
 
 /* Footer Section */
 
-.attribution { 
-  font-size: 11px; 
-  text-align: center; 
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
 
-  .attribution a { 
-    color: hsl(228, 45%, 44%); 
-  }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
