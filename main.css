@@ -108,7 +108,7 @@ h1 {
   color: var(--Almost-Black);
 }
 
-p {
+h3 {
   font-size: 1.5rem;
   color: var(--Medium-Gray);
   line-height: 1.5;
@@ -152,7 +152,7 @@ button:hover {
     text-align: left;
   }
 
-  p {
+  h3 {
     font-size: 1.4rem;
     padding: 1rem;
   }
