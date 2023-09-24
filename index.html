@@ -9,26 +9,56 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-<header class="navbar">
-  <img class="logo" src="images/logo.svg" alt="Logo">
-  <div>
-    <ul class="list">
-      <li class="li-features">Features
-        <ul class="dropdown">
-          <li><img src="images/icon-todo.svg" alt=""> Todo List</li>
-          <li><img src="images/icon-calendar.svg" alt="">Calendar</li>
-          <li><img src="images/icon-reminders.svg" alt="">Reminders</li>
-          <li><img src="images/icon-planning.svg" alt="">Planning</li>
+<div class="container">
+  <header class="header">
+    <nav class="header-nav">
+    <div class="logo">
+      <img src="images/logo.svg" alt="Logo">
+    </div>
+
+  <div class="navigations">
+    <ul class="navigations-ul">
+      <li class="features dropdown hidden">
+        <div class="arrow">
+          <a href="#features" class="features-a">Features</a>
+          <img src="images/icon-arrow-down.svg" alt="arrow down">
+        </div>
+        <ul class="drop-box">
+          <li><img src="images/icon-todo.svg" alt="todo icon">
+            <a href="#todo-list">Todo List</a>
+          </li>
+          <li>
+            <img src="images/icon-calendar.svg" alt="calendar icon">
+            <a href="#calendar">Calendar</a>
+          </li>
+          <li>
+            <img src="images/icon-reminders.svg" alt="reminder icon">
+            <a href="#reminders">Reminders</a>
+          </li>
+          <li>
+            <img src="images/icon-planning.svg" alt="planning icon">
+            <a href="#planning">Planning</a>
+          </li>
         </ul>
       </li>
-      <li class="li-company">Company
-        <ul class="dropdown">
-          <li>History</li>
-          <li>Our Team</li>
-          <li>Blog</li>
+      <li class="company dropdown hidden">
+        <div class="arrow">
+          <a class="company-a" href="#company" >Company</a>
+          <img src="images/icon-arrow-down.svg" alt="arrow down">
+        </div>
+        <ul class="drop-box">
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li><a href="#our-team">Our Team</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
         </ul>
       </li>
-      <li>Careers</li>
+
+      <li class="career">Careers</li>
       <li>About</li>
   </ul>
 </div>
@@ -37,8 +67,9 @@
       <li>Login</li>
       <li>Register</li>
   </ul>
-</div>
-</header>
+      </div>
+    </nav>
+  </header>
 <div class="container">
 <article>
 <h1>Make
@@ -70,5 +101,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/orazdaurenov">Orazbek Daurenov</a>.
 </footer>
+</div>
 </body>
 </html>
