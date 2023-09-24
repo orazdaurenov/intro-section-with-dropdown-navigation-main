@@ -136,21 +136,44 @@ button:hover {
 
 .icons img {
   margin-left: 2em;
-  height: 2em;
+  height: 1.5em;
 }
+
+/*Media Queries*/
 
 @media screen and (max-width:768px) {
   .logo {
-    margin: 1em 2em;
+    margin: 1em;
+    height: 5em;
   }
 
-  .navbar {
+  h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
 
+  p {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem auto;
+  }
+
+  .icons {
+    display: flex;
+    margin-top: 5em;
+  }
+
+  .navbar .list, .log-reg {
+    display: none;
   }
 
   .container {
     display: flex;
-    margin: 1rem 1rem;
     flex-direction: column-reverse;
   }
   
@@ -161,10 +184,13 @@ button:hover {
     text-align: center;
   }
 
-  article:last-child {
-    max-width: 400px;
+  .attribution {
+    position: relative;
+    bottom: -10rem;
+    left: 50%;
   }
 }
+
 
 /* Footer Section */
 
